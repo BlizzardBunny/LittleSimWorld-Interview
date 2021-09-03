@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Grass
+    uniqueID: 2231463563
+    locked: 0
+  - name: Walls
+    uniqueID: 1403040567
+    locked: 0
+  - name: Props
+    uniqueID: 3012970513
+    locked: 0
