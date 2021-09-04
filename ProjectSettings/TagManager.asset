@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Inside
+  - Outside
+  - Door
+  - Exit
   - 
   - 
   - 
@@ -47,6 +47,12 @@ TagManager:
   - name: Walls
     uniqueID: 1403040567
     locked: 0
+  - name: Inside
+    uniqueID: 1868839929
+    locked: 0
   - name: Props
     uniqueID: 3012970513
+    locked: 0
+  - name: Player
+    uniqueID: 2333749789
     locked: 0

@@ -56,17 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Brushes\RandomBrush\RandomBrush.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Brushes\GameObjectBrush\GameObjectBrush.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\RuleTile\RuleTileEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Brushes\LineBrush\LineBrush.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\RuleOverrideTile\PopulateRuleOverrideTileWizard.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Brushes\GroupBrush\GroupBrush.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Menu\CustomRuleTileMenu.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\HexagonalRuleTile\HexagonalRuleTileEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\RuleTile\RuleTileEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Brushes\GameObjectBrush\GameObjectBrush.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Brushes\RandomBrush\RandomBrush.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\RuleOverrideTile\PopulateRuleOverrideTileWizard.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\RuleOverrideTile\RuleOverrideTileEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Brushes\GroupBrush\GroupBrush.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Menu\MenuItemOrder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\HexagonalRuleTile\HexagonalRuleTileEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\RuleOverrideTile\AdvancedRuleOverrideTileEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Brushes\LineBrush\LineBrush.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap.extras@1.8.0-preview\Editor\Tiles\IsometricRuleTile\IsometricRuleTileEditor.cs" />
   </ItemGroup>
   <ItemGroup>

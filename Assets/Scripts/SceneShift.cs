@@ -7,7 +7,7 @@ public class SceneShift : MonoBehaviour
 {
     public void NewGame()
     {
-        SceneManager.LoadScene("Shop");
+        SceneManager.LoadScene("World");
     }
 
     public void Exit()
