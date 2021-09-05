@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OutfitChanger : MonoBehaviour
 {
@@ -11,6 +12,19 @@ public class OutfitChanger : MonoBehaviour
     public List<Sprite> options = new List<Sprite>();
 
     private int currentOption = 0;
+
+    private void Start()
+    {
+        if (bodyPart.tag == "Head")
+        {
+            currentOption = OutfitTracker.GetHair();   
+        }
+        else if (bodyPart.tag == "Body")
+        {
+            currentOption = OutfitTracker.GetOutfit();
+        }
+        bodyPart.sprite = options[currentOption];
+    }
 
     public void NextOption()
     {
@@ -30,5 +44,20 @@ public class OutfitChanger : MonoBehaviour
             currentOption = options.Count - 1;
         }
         bodyPart.sprite = options[currentOption];
+    }
+
+    public void SetOutfit()
+    {
+        OutfitTracker.SetOutfit(currentOption);
+    }
+
+    public void SetHair()
+    {
+        OutfitTracker.SetHair(currentOption);
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("World");
     }
 }
