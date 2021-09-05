@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] Transform movePoint;
     [SerializeField] LayerMask obstacles;
-    [SerializeField] GameObject panel;
+    [SerializeField] List<GameObject> panels;
 
     private Vector2 direction;
     private Animator headAnim, bodyAnim;
@@ -18,6 +19,13 @@ public class PlayerMovement : MonoBehaviour
         direction = Vector2.down;
         headAnim = GameObject.FindGameObjectWithTag("Head").GetComponent<Animator>();
         bodyAnim = GameObject.FindGameObjectWithTag("Body").GetComponent<Animator>();
+        if (panels.Count > 0)
+        {
+            foreach (GameObject p in panels)
+            {
+                p.gameObject.SetActive(false);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -56,33 +64,62 @@ public class PlayerMovement : MonoBehaviour
             headAnim.SetBool("RightBool", true);
             bodyAnim.SetBool("RightBool", true);
             direction = Vector2.right;
-            panel.gameObject.SetActive(false);
+            if(panels.Count > 0)
+            {
+                foreach(GameObject p in panels)
+                {
+                    p.gameObject.SetActive(false);
+                }
+            }            
         }
         else if (Input.GetAxisRaw("Horizontal") < 0f)//left
         {
             headAnim.SetBool("LeftBool", true);
             bodyAnim.SetBool("LeftBool", true);
             direction = Vector2.left;
-            panel.gameObject.SetActive(false);
+            if (panels.Count > 0)
+            {
+                foreach (GameObject p in panels)
+                {
+                    p.gameObject.SetActive(false);
+                }
+            }
         }
         else if (Input.GetAxisRaw("Vertical") > 0f)//up
         {
             headAnim.SetBool("UpBool", true);
             bodyAnim.SetBool("UpBool", true);
             direction = Vector2.up;
-            panel.gameObject.SetActive(false);
+            if (panels.Count > 0)
+            {
+                foreach (GameObject p in panels)
+                {
+                    p.gameObject.SetActive(false);
+                }
+            }
         }
         else if (Input.GetAxisRaw("Vertical") < 0f)//down
         {
             headAnim.SetBool("DownBool", true);
             bodyAnim.SetBool("DownBool", true);
             direction = Vector2.down;
-            panel.gameObject.SetActive(false);
+            if (panels.Count > 0)
+            {
+                foreach (GameObject p in panels)
+                {
+                    p.gameObject.SetActive(false);
+                }
+            }
         }
 
         if (Input.GetButtonDown("Fire1"))
         {
             Interact();
+        }
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneManager.LoadScene("TitleScreen");
         }
     }
 

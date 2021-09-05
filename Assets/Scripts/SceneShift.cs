@@ -7,6 +7,7 @@ public class SceneShift : MonoBehaviour
 {
     public void NewGame()
     {
+        OutfitTracker.SetHasPlayed(true);
         SceneManager.LoadScene("World");
     }
 
