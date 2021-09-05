@@ -22,7 +22,6 @@ public class ShopKeep : Interactable
         }
         else
         {
-            OutfitTracker.SetPlayerLocation(player.transform.position);
             SceneManager.LoadScene("Shop");
         }        
     }

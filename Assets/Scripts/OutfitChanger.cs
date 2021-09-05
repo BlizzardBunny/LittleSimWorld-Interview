@@ -13,6 +13,19 @@ public class OutfitChanger : MonoBehaviour
 
     private int currentOption = 0;
 
+    private void Start()
+    {
+        if (bodyPart.tag == "Head")
+        {
+            currentOption = OutfitTracker.GetHair();   
+        }
+        else if (bodyPart.tag == "Body")
+        {
+            currentOption = OutfitTracker.GetOutfit();
+        }
+        bodyPart.sprite = options[currentOption];
+    }
+
     public void NextOption()
     {
         currentOption++;

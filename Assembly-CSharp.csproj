@@ -61,10 +61,11 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\EnterDoor.cs" />
+    <Compile Include="Assets\Scripts\OutfitTracker.cs" />
+    <Compile Include="Assets\Scripts\ShopKeep.cs" />
     <Compile Include="Assets\Scripts\ExitDoor.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
-    <Compile Include="Assets\Scripts\ShopKeep.cs" />
-    <Compile Include="Assets\Scripts\OutfitTracker.cs" />
+    <Compile Include="Assets\Scripts\ResolverScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

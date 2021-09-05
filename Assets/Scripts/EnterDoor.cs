@@ -11,7 +11,7 @@ public class EnterDoor : MonoBehaviour
 
     public bool hasEntered;
     private void Start()
-    {
+    {        
         insideCollider.enabled = false;
         hasEntered = false;
     }
