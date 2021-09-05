@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OutfitChanger : MonoBehaviour
 {
@@ -30,5 +31,20 @@ public class OutfitChanger : MonoBehaviour
             currentOption = options.Count - 1;
         }
         bodyPart.sprite = options[currentOption];
+    }
+
+    public void SetOutfit()
+    {
+        OutfitTracker.SetOutfit(currentOption);
+    }
+
+    public void SetHair()
+    {
+        OutfitTracker.SetHair(currentOption);
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("World");
     }
 }
