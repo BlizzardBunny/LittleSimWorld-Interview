@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SceneShift.cs" />
+    <Compile Include="Assets\Scripts\ResolverScript.cs" />
     <Compile Include="Assets\Scripts\OutfitChanger.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -65,7 +66,9 @@
     <Compile Include="Assets\Scripts\ShopKeep.cs" />
     <Compile Include="Assets\Scripts\ExitDoor.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
-    <Compile Include="Assets\Scripts\ResolverScript.cs" />
+    <Compile Include="Assets\Scripts\Mannequin.cs" />
+    <Compile Include="Assets\Scripts\ScrollScript.cs" />
+    <Compile Include="Assets\Scripts\ShopController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
